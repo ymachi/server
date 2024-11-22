@@ -17,6 +17,6 @@ articleRouter.delete("/delete/:id", isLogged, deleteArticle)
 // On créé un chemin dans URL pour accéder aux données
 articleRouter.get("/",  getAllArticles)
 
-articleRouter.get("/id", isLogged, getOneArticle)
+articleRouter.get("/:id", isLogged, getOneArticle)
 
 export default articleRouter
